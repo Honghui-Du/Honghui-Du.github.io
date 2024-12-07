@@ -313,3 +313,24 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
   -webkit-transition: $global-transition;
   transition: $global-transition;
 }
+
+.two-columns {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Adjust spacing between columns */
+
+  .column {
+    flex: 1; /* Each column takes up equal width */
+    padding: 0 10px;
+  }
+
+  ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 10px; /* Add spacing between items */
+  }
+}

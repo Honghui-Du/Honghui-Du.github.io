@@ -9,9 +9,16 @@ redirect_from:
 
 {% include base_path %}
 
-Education & Research Focus
+Biography
 ------
-**University of Minnesota-Twin Cities, College of Science and Engineering** &nbsp;&nbsp; Minnesota, the U.S. <br>
+I am a third-year Ph.D. student at the University of Minnesota, working under the supervision of Prof. Qizhi He. My current research focuses on developing GPU-accelerated and differentiable simulation methods for computational mechanics. I aim to integrate physical simulations with deep learning frameworks to enable efficient and data-driven solutions for physics-based problems, with applications in scientific machine learning and inverse design.
+
+In addition, I am exploring advanced particle based methods (RKPM, MPM, SPH), with a keen interest in leveraging machine learning for real-time simulations and optimizations. I am particularly passionate about bridging computational mechanics and artificial intelligence to tackle real-world engineering challenges.
+
+Before pursuing my Ph.D., I earned my Master's degree in Engineering Mechanics from Xiamen University in June 2022, where I conducted research on theoratical foundation of particle based numerical methods under the guidance of Prof. Dongdong Wang.
+
+
+<!-- **University of Minnesota-Twin Cities, College of Science and Engineering** &nbsp;&nbsp; Minnesota, the U.S. <br>
 *Ph.D. in Computational Science and Engineering; GPA 3.89/4.0 	Expected Graduation 2026* <br>
 **University of Minnesota-Twin Cities, College of Science and Engineering** &nbsp;&nbsp; Minnesota, the U.S. <br>
 *M.S. in Computer Science; GPA 3.89/4.0 	Expected Graduation 2026* <br>
@@ -20,7 +27,7 @@ Education & Research Focus
 **Chongqing Jiaotong University** &nbsp;&nbsp; Chongqing, China <br>
 *B.S. in Civil Engineering; 	Jun 2019* 
 
-<font size=3>Research interests: Scientifc Machine Learning and Computing, Finite Element Analysis (FEA), Computational Fluid Dynamics (CFD), Material Point Method (MPM), Numerical Optimization, Parallel Computing, PDE Solvers, Inverse Design, Computational Mechanics, Computer Vision, Numerical Simulation</font> 
+<font size=3>Research interests: Scientifc Machine Learning and Computing, Finite Element Analysis (FEA), Computational Fluid Dynamics (CFD), Material Point Method (MPM), Numerical Optimization, Parallel Computing, PDE Solvers, Inverse Design, Computational Mechanics, Computer Vision, Numerical Simulation</font>  -->
 
 Skills & coursework
 ------
