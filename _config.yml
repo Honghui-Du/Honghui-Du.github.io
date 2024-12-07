@@ -14,7 +14,7 @@ name                     : &name "Honghui Du"
 description              : &description "Personal Description"
 url                      : https://Honghui-Du.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "Nwgmp/Nwgmp.github.io"
+repository               : "Honghui-Du/Honghui-Du.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -23,7 +23,7 @@ author:
   # Biographic information
   avatar           : "images/profile.png"
   name             : # "Your Sidebar Name"
-  pronouns         : "(he/his/him)"  
+  pronouns         : "(ceshi)"  
   bio              : "My contact info: "
   location         : "U.S."
   employer         : "University of Minnesota-Twin Cities"
