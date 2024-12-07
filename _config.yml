@@ -11,8 +11,8 @@ locale                   : "en-US"
 title                    : "Honghui Du"
 title_separator          : "-"
 name                     : &name "Honghui Du"
-description              : &description "personal description"
-url                      : https://nwgmp.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+description              : &description "Personal Description"
+url                      : https://Honghui-Du.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Nwgmp/Nwgmp.github.io"
 
@@ -21,7 +21,7 @@ repository               : "Nwgmp/Nwgmp.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "fig/profile.png"
   name             : # "Your Sidebar Name"
   pronouns         : "(he/his/him)"  
   bio              : "My contact info: "
