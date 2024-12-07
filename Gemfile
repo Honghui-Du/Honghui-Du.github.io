@@ -9,3 +9,7 @@ group :jekyll_plugins do
 end
 
 gem 'github-pages'
+
+platforms :mingw, :x64_mingw, :mswin, :jruby do
+  gem "tzinfo-data"
+end

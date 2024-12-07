@@ -21,18 +21,18 @@ repository               : "Honghui-Du/Honghui-Du.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/profile.png"
+  avatar           : "profile.png"
   name             : # "Your Sidebar Name"
-  pronouns         : "(ceshi)"  
+  pronouns         : "(he/his/him)"  
   bio              : "My contact info: "
   location         : "U.S."
-  employer         : "ces"
+  employer         : "University of Minnesota-Twin Cities"
   uri              : "https://twin-cities.umn.edu/"
   email            : "du000211@umn.edu" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : # "https://scholar.google.com/citations?user=ixJimzkAAAAJ&hl=en&oi=ao"
   impactstory      : # URL
   orcid            : # "http://orcid.org/yourorcidurl"
   semantic         : # URL
@@ -44,7 +44,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : # "academicpages"
+  github           : # "https://github.com/Honghui-Du"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
