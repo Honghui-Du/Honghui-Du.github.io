@@ -4,7 +4,7 @@ collection: portfolio
 order: 3
 # description: "A repository featuring physics-based simulation tools using JAX, including mass-spring and Material Point Method (MPM) simulations for 2D and 3D fluid scenarios."
 image: "/images/detection.png"
-github: "github.com/Honghui-Du/AI_genertaed_text_detection_Debert" # Replace with your actual GitHub link
+github: "https://github.com/Honghui-Du/AI_genertaed_text_detection_Debert" # Replace with your actual GitHub link
 image_size: 350px
 ---
 
