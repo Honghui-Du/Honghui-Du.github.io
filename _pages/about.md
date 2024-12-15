@@ -15,7 +15,7 @@ I am a third-year Ph.D. student at the University of Minnesota-Twin Cities, work
 
 Before pursuing my Ph.D., I earned my Master's degree in Engineering Mechanics from Xiamen University in June 2022, where I conducted research on theoratical foundation of particle based numerical methods under the guidance of Prof. [<span style="color:#1A0DAB;">Dongdong Wang</span>](https://www.researchgate.net/profile/Dongdong-Wang-15).
 
-In addition, I am always active in exploring more fields (including LLM fine tuning, transformers, interactive simulation...), please check <a href="/portfolio/">Portfolio</a> page for the projects listed.
+In addition, I am always active in exploring more fields (including LLM fine tuning, transformers, interactive simulation, 3D reconstruction...), please check <a href="/portfolio/">Portfolio</a> page for the projects listed.
 
 <div class="two-columns">
   <div class="column">
