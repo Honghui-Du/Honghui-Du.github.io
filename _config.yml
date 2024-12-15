@@ -14,7 +14,7 @@ name                     : &name "Honghui Du"
 description              : &description "Personal Description"
 url                      : https://Honghui-Du.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "Honghui-Du/Honghui-Du.github.io"
+repository               : "Honghui-Du.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -25,7 +25,7 @@ author:
   name             : # "Your Sidebar Name"
   pronouns         : "(he/his/him)"  
   bio              : "My contact info: "
-  location         : "U.S."
+  location         : "Minnesota, U.S."
   employer         : "University of Minnesota-Twin Cities"
   # uri              : "https://twin-cities.umn.edu/"
   email            : "du000211@umn.edu" 
@@ -44,7 +44,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           :  "https://github.com/Honghui-Du"
+  github           :  "Honghui-Du"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 

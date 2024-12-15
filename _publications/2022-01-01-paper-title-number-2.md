@@ -1,11 +1,12 @@
 ---
-title: "A unifed reproducing kernel gradient smoothing Galerkin meshfree approach to strain gradient elasticity"
+title: "A Unified Reproducing Kernel Gradient Smoothing Galerkin Meshfree Approach to Strain Gradient Elasticity"
 collection: publications
 category: manuscripts
-permalink: /publication/2022-01-01-paper-title-number-2
-excerpt: ''
+paper_url: "https://link.springer.com/article/10.1007/s00466-022-02156-z"
+excerpt: 'This paper presents a unified approach to strain gradient elasticity using a reproducing kernel gradient smoothing technique in a meshfree Galerkin method, offering enhanced accuracy and computational stability.'
 date: 2022-01-01
-venue: 'Computational Mechanics 70.1 (2022): 73-100'
+journal: 'Computational Mechanics'
+image: "/images/unified_new.png"
+image_size: "350px"
+authors: Honghui Du, Junchao Wu, Dongdong Wang, Jian Chen
 ---
-
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
