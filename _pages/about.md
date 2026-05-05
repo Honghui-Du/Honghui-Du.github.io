@@ -48,7 +48,32 @@ In addition, I am always active in exploring more fields (including LLM fine tun
 </div>
 
 
+## Work Experience
+------
+
+<ul>
+  <li>
+    <b>Google LLC</b> — Software Engineer Intern, Image Search Team <span style="float:right; color:#555;">Aug 2025 – Nov 2025</span><br>
+    <span style="color:#555;">California, United States</span><br>
+    Built a scalable multi-stage C++ pipeline in distributed cloud infrastructure to construct a semantic query graph (250M+ queries) using LLM outputs and dense embeddings; reduced redundancy by 27% and expanded coverage by 13%.
+  </li>
+  <br>
+  <li>
+    <b>Meta Platforms, Inc</b> — Software Engineer (ML) Intern, Marketplace Integrity Team <span style="float:right; color:#555;">May 2025 – Aug 2025</span><br>
+    <span style="color:#555;">California, United States</span><br>
+    Built large-scale text embedding pipelines and deployed a low-latency semantic retrieval &amp; ranking service (vector + KV search) at production scale for real-time scam detection, reducing scam exposure by 6–6.4%.
+  </li>
+  <br>
+  <li>
+    <b>Pasteur Labs &amp; ISI</b> — Simulation Intelligence Intern <span style="float:right; color:#555;">Feb 2025 – May 2025</span><br>
+    <span style="color:#555;">New York, United States</span><br>
+    Built a physics-constrained 3D shape optimization module leveraging a differentiable meshfree simulation framework for gradient-based optimization and data-driven calibration of physical asset properties. Deployed a ViT-based simulation validation model via Azure MLOps.
+  </li>
+</ul>
+
 
 ## Academic & Volunteer Service
 ------
 **<font size=3>Reviewer</font>**: <font size=3>Applied Intelligence; Computers and Mathematics with Applications; Numerical Heat Transfer, Part B: Fundamentals; International Conference on Computer Science and Application Engineering</font> 
+
+---
