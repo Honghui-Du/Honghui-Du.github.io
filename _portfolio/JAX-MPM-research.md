@@ -2,7 +2,7 @@
 title: "JAX-MPM: Learning-Augmented Differentiable MPM for GPU-Accelerated Lagrangian Simulation"
 collection: portfolio
 order: 0
-image: "/images/mpm.gif"
+image: "/images/jaxmpm_cover.png"
 github: "https://github.com/IntelligentMechanicsLab/JAX-MPM"
 ---
 
