@@ -14,14 +14,18 @@ author_profile: true
     <div class="publication">
       <div class="publication__container">
         <div class="publication__details">
-          <!-- Updated to use paper_url for the href attribute -->
-          <h3><a href="{{ post.paper_url }}" target="_blank" rel="noopener">{{ post.title }}</a></h3>
+          {% if post.detail_page %}
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          {% else %}
+            <h3><a href="{{ post.paper_url }}">{{ post.title }}</a></h3>
+          {% endif %}
           <p class="publication__description">{{ post.description }}</p>
           <p class="publication__authors"><strong>Authors:</strong> {{ post.authors }}</p>
           {% if post.journal %}
-            <p class="publication__journal"><strong>Journal:</strong> {{ post.journal }}</p>
+            <p class="publication__journal"><strong>Journal:</strong> {{ post.journal }}{% if post.publication_year %}, {{ post.publication_year }}{% endif %}</p>
           {% endif %}
           <div class="publication__links">
+            {% if post.detail_page %}<a class="btn btn-secondary" href="{{ post.url | relative_url }}">Overview &amp; results</a>{% endif %}
             {% for link in post.links %}
               <a class="btn btn-secondary" href="{{ link.url }}">{{ link.name }}</a>
             {% endfor %}
@@ -64,6 +68,7 @@ author_profile: true
 /* Styling for publication details */
 .publication__details {
   flex: 1;
+  min-width: 0;
 }
 
 .publication__details h3 {
@@ -98,6 +103,13 @@ author_profile: true
 .publication__links .btn:hover {
   background-color: #007bff;
   color: #fff;
+}
+
+@media (max-width: 700px) {
+  .publication__container { flex-direction: column; }
+  .publication__image { max-width: 100%; }
+  .publication__image img { max-width: 100% !important; }
+  .publication__details h3 { overflow-wrap: break-word; }
 }
 
 /* Styling for publication image */

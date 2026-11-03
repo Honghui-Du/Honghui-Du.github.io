@@ -1,0 +1,20 @@
+<div class="publication-summary">
+  <p class="publication-authors">{{ page.authors }}</p>
+  {% if page.equal_contribution %}<p class="publication-equal">{{ page.equal_contribution }}</p>{% endif %}
+  <p><em>{{ page.journal }}</em> {{ page.volume }}, {{ page.pages }} ({{ page.publication_year }}).</p>
+  <p class="publication-doi">DOI: <a href="{{ page.paper_url }}">{{ page.doi }}</a></p>
+  <nav class="publication-actions" aria-label="Paper resources">
+    <a class="btn" href="{{ page.paper_url }}">Journal article</a>
+    {% if page.pdf %}<a class="btn" href="{{ page.pdf }}">Published PDF</a>{% endif %}
+    {% if page.preprint %}<a class="btn" href="{{ page.preprint }}">Preprint</a>{% endif %}
+    {% if page.preprint_pdf %}<a class="btn" href="{{ page.preprint_pdf }}">Preprint PDF</a>{% endif %}
+    {% if page.code %}<a class="btn" href="{{ page.code }}">Code &amp; examples</a>{% endif %}
+    <a class="btn" href="{{ page.bibtex_url | relative_url }}">BibTeX</a>
+  </nav>
+  <nav class="publication-sections" aria-label="On this page">
+    <a href="#overview">Overview</a> · <a href="#abstract">Abstract</a> ·
+    <a href="#method-and-contributions">Method</a> · <a href="#results">Results</a> ·
+    <a href="#scope-and-limitations">Scope</a> · <a href="#resources-and-reproduction">Resources</a> ·
+    <a href="#citation">Citation</a>
+  </nav>
+</div>
