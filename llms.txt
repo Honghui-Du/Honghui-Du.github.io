@@ -1,0 +1,24 @@
+---
+layout: null
+sitemap: false
+---
+# Honghui Du — computational mechanics research
+
+> Author-maintained research pages on neural meshfree approximation, differentiable simulation, inverse modeling, and strain-gradient elasticity.
+
+## Research guides
+
+- [Methods, papers, and code](https://honghui-du.github.io/research/): Task-based guide, scope distinctions, and existing implementations.
+- [中文研究导读](https://honghui-du.github.io/zh/research/): Chinese-language guide to the same research.
+- [Publication list](https://honghui-du.github.io/publications/): Bibliographic overview.
+- [Paper records](https://honghui-du.github.io/research/papers.json): Structured metadata generated from the publication pages.
+
+## Papers
+{% for paper in site.publications %}{% if paper.detail_page %}
+- [{{ paper.title }}]({{ paper.url | absolute_url }}): {{ paper.description }} DOI: {{ paper.doi }}.
+{% endif %}{% endfor %}
+
+## Existing software
+
+- [NIM-Tutorial](https://github.com/IntelligentMechanicsLab/NIM-Tutorial): Selected NIM tutorials and examples.
+- [JAX-MPM](https://github.com/IntelligentMechanicsLab/JAX-MPM): Selected differentiable MPM validation and friction-inversion examples.

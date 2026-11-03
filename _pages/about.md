@@ -8,6 +8,8 @@ redirect_from:
 ---
 
 
+Explore the [research guide](/research/) to find papers and existing code by task: neural PDE solving, material identification, differentiable particle simulation, and porous-media modeling. [中文导读](/zh/research/)
+
 ## Biography
 ------
 I am a third-year Ph.D. student at the University of Minnesota-Twin Cities, working under the supervision of Prof. [<span style="color:#1A0DAB;">Qizhi He</span>](https://scholar.google.com/citations?user=lZ4PEUAAAAAJ&hl=en)

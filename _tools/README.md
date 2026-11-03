@@ -11,7 +11,7 @@ python _tools/submit_indexnow.py
 python _tools/submit_indexnow.py --submit --output /tmp/indexnow-receipt.json
 ```
 
-The first command checks the live key and the seven configured URLs without
+The first command checks the live key and the configured URLs without
 submitting. The second submits to the IndexNow shared endpoint. HTTP 200 means
 receipt; HTTP 202 means receipt with ownership validation pending. Neither means
 that pages are indexed or cited by an AI system. Avoid repeatedly submitting

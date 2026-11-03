@@ -1,0 +1,23 @@
+---
+layout: null
+permalink: /research/papers.json
+sitemap: false
+---
+{
+  "maintained_by": "Honghui Du",
+  "description": "Author-maintained metadata for selected first-author papers; publication pages contain evidence and limitations.",
+  "papers": [{% assign papers = site.publications | where: "detail_page", true %}{% for paper in papers %}
+    {
+      "title": {{ paper.title | jsonify }},
+      "authors": {{ paper.author_list | jsonify }},
+      "year": {{ paper.publication_year | jsonify }},
+      "journal": {{ paper.journal | jsonify }},
+      "doi": {{ paper.doi | jsonify }},
+      "url": {{ paper.url | absolute_url | jsonify }},
+      "journal_url": {{ paper.paper_url | jsonify }},
+      "bibtex": {{ paper.bibtex_url | absolute_url | jsonify }},
+      "code": {{ paper.code | jsonify }},
+      "preprint": {{ paper.preprint | jsonify }}
+    }{% unless forloop.last %},{% endunless %}{% endfor %}
+  ]
+}
