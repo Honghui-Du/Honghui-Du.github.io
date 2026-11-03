@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Honghui Du personal webpage"
+title: "Honghui Du — computational mechanics and differentiable simulation"
 author_profile: true
 redirect_from: 
   - /about/

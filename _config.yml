@@ -11,8 +11,8 @@ locale                   : "en-US"
 title                    : "Honghui Du"
 title_separator          : "-"
 name                     : &name "Honghui Du"
-description              : &description "Personal Description"
-url                      : https://Honghui-Du.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+description              : &description "Honghui Du's research in computational mechanics, neural meshfree methods, differentiable simulation, and inverse modeling. Papers, results, and public code."
+url                      : https://honghui-du.github.io # Canonical site origin
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Honghui-Du.github.io"
 
