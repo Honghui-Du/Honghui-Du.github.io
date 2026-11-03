@@ -81,6 +81,16 @@ The demonstrated material models are hyperelastic. The results do not by themsel
 
 The public repository includes one-dimensional hyperelasticity tutorials for the NIM/c and NIM/h variants. These illustrate the formulation, but do not constitute a complete reproduction package for all two-dimensional inverse examples. The [original NIM paper](/publication/nim/) introduces the hybrid approximation and solver framework.
 
+## Research questions
+
+### What measurements are used to identify heterogeneous elastic properties?
+
+The inverse formulation uses strain observations together with the governing equations to estimate spatially varying elastic modulus. NeuroPU represents both displacement and unknown material fields. The Gaussian-random-field example compares the reconstructed modulus with ground truth; finer approximation resolution improves the reported recovery. See Figs. 21–22 of the journal article.
+
+### Does the formulation cover plasticity or damage?
+
+The reported forward and inverse tests concern finite-strain hyperelasticity. They do not validate plasticity, damage, or other history-dependent material behavior. The demonstrated forward cases include uniaxial tension, a two-dimensional plate, and a large-deflection cantilever. See the numerical examples in the journal article.
+
 ## Citation
 
 Honghui Du; Binyao Guo; QiZhi He (2025). Differentiable neural-integrated meshfree method for forward and inverse modeling of finite strain hyperelasticity. *Engineering with Computers*, 41, 1597–1617. [DOI: 10.1007/s00366-024-02090-z](https://doi.org/10.1007/s00366-024-02090-z).

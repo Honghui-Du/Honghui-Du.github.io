@@ -81,6 +81,16 @@ The reported accuracy and training-time comparisons concern the benchmark proble
 
 The NIM-Tutorial repository provides selected examples, including an advection–diffusion forward problem. It is a tutorial resource, rather than a complete archive of every experiment in this paper. For finite-strain forward and inverse material modeling, see the [hyperelasticity extension](/publication/nim-hyperelasticity/).
 
+## Research questions
+
+### How does the approximation combine neural networks and meshfree basis functions?
+
+NeuroPU combines neural networks with local partition-of-unity meshfree basis functions. Polynomial reproduction and smoothness are controlled through the meshfree approximation, while neural networks provide the trainable representation. The paper studies both strong-form residuals and local variational residuals. See Sections 2–4 of the journal article.
+
+### Which problems and convergence properties were tested?
+
+The study includes Poisson and linear-elasticity benchmarks, together with parameterized and time-dependent problems. Figure 6 reports solution and gradient errors under meshfree refinement for different polynomial orders and test functions. These results concern the tested configurations and do not establish a universal advantage over FEM. See Sections 6–8 and Fig. 6.
+
 ## Citation
 
 Honghui Du; QiZhi He (2024). Neural-Integrated Meshfree (NIM) Method: A differentiable programming-based hybrid solver for computational mechanics. *Computer Methods in Applied Mechanics and Engineering*, 427, 117024. [DOI: 10.1016/j.cma.2024.117024](https://doi.org/10.1016/j.cma.2024.117024).

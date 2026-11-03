@@ -80,6 +80,16 @@ The experiments concern a two-dimensional homogeneous porous medium. Agreement w
 
 The paper states that data are available on request. A public code repository for this study has not been verified. The author-uploaded preprint is linked above; access to its download may depend on ResearchGate availability.
 
+## Research questions
+
+### Why combine Fourier features with sequential time-domain training?
+
+Fourier-feature embedding enriches the spatial representation for convective patterns, while sequential training divides the time domain into shorter intervals. The paper investigates Fourier order, residual sampling, and interval length against a stabilized FEM reference. See Sections 3–4 and Fig. 13; the source reviewed here is the corrected proof.
+
+### What limits were observed for stronger convection?
+
+The experiments cover a two-dimensional homogeneous porous medium with Rayleigh numbers from 500 to 2000. Agreement with the FEM reference deteriorates as convection strengthens, particularly at Rayleigh number 2000. The paper does not establish a systematic runtime advantage over FEM or validate heterogeneous porous formations. See the numerical results and conclusions.
+
 ## Citation
 
 Honghui Du; Ze Zhao; Haojia Cheng; Jinhui Yan; QiZhi He (2023). Modeling density-driven flow in porous media by physics-informed neural networks for CO2 sequestration. *Computers and Geotechnics*, 159, 105433. [DOI: 10.1016/j.compgeo.2023.105433](https://doi.org/10.1016/j.compgeo.2023.105433).

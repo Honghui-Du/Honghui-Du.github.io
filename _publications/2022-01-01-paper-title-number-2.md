@@ -77,6 +77,16 @@ The formulation and validation concern strain-gradient elasticity and the basis 
 
 The journal article contains the formulation, quadrature construction, and numerical settings. A public code repository or open-access full-text copy has not been verified for this study; use the DOI link for the publisher access options.
 
+## Research questions
+
+### Why unify the smoothing of first and second derivatives?
+
+Constructing first- and second-order smoothed gradients separately can violate the integration-consistency requirement for strain-gradient elasticity. The proposed construction links both derivative orders through shared coefficients and a unified consistency condition. See the formulation and patch tests in the journal article.
+
+### How is accuracy assessed for the higher-order formulation?
+
+The paper uses patch tests and one-, two-, and three-dimensional examples to compare the meshfree formulation with Gauss-integration-based alternatives. The hollow-cylinder example reports solution and derivative errors under refinement, including L², H¹, and H² errors for a quartic basis. See Fig. 21; these are accuracy and convergence results, not runtime measurements.
+
 ## Citation
 
 Honghui Du; Junchao Wu; Dongdong Wang; Jian Chen (2022). A unified reproducing kernel gradient smoothing Galerkin meshfree approach to strain gradient elasticity. *Computational Mechanics*, 70, 73–100. [DOI: 10.1007/s00466-022-02156-z](https://doi.org/10.1007/s00466-022-02156-z).

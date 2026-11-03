@@ -1,0 +1,14 @@
+{
+  "host": "honghui-du.github.io",
+  "key": "dde3a47217aeea8beb5ee1e6023783fb",
+  "keyLocation": "https://honghui-du.github.io/dde3a47217aeea8beb5ee1e6023783fb.txt",
+  "urlList": [
+    "https://honghui-du.github.io/",
+    "https://honghui-du.github.io/publications/",
+    "https://honghui-du.github.io/publication/nim/",
+    "https://honghui-du.github.io/publication/nim-hyperelasticity/",
+    "https://honghui-du.github.io/publication/jax-mpm/",
+    "https://honghui-du.github.io/publication/co2-pinn/",
+    "https://honghui-du.github.io/publication/strain-gradient/"
+  ]
+}
