@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-Explore the [research guide](/research/) to find papers and existing code by task: neural PDE solving, material identification, differentiable particle simulation, and porous-media modeling.
+Read about my [research](/research/) in computational mechanics, scientific machine learning, and differentiable simulation.
 
 ## Biography
 ------

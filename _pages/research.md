@@ -1,48 +1,39 @@
 ---
 layout: single
-title: "Differentiable simulation and inverse modeling: methods, papers, and code"
+title: "Research"
 permalink: /research/
 author_profile: true
-description: "Choose a starting point for neural meshfree PDE solvers, finite-strain material identification, differentiable MPM, and porous-media PINNs. Research by Honghui Du and collaborators."
+description: "Honghui Du's research in computational mechanics: neural meshfree methods, differentiable simulation, inverse modeling, and numerical discretization."
 ---
 
-Our research develops numerical methods for computational mechanics, with a focus on neural meshfree approximation, differentiable simulation, and inverse modeling. The sections below connect these methods to their applications, publications, and available code.
+My research focuses on numerical methods for computational mechanics, combining meshfree discretization, scientific machine learning, and differentiable programming. I develop methods for solving governing equations and inferring material properties and system conditions from observations. Together with my collaborators, I study these ideas in solid mechanics, large-deformation flows, and transport in porous media.
 
-## Which method fits the problem?
+## Neural–numerical methods for computational mechanics
 
-| Your task | Starting point | Information or physics used | Evidence and limits |
-|---|---|---|---|
-| Solve PDEs with a hybrid neural and meshfree approximation | [Neural-Integrated Meshfree (NIM)](/publication/nim/) | Governing equations, boundary conditions, local meshfree basis functions, and neural networks | Poisson, linear elasticity, parameterized and time-dependent examples; results depend on approximation order and test functions |
-| Identify heterogeneous elastic properties at finite strain | [Differentiable NIM for hyperelasticity](/publication/nim-hyperelasticity/) | Strain observations and the hyperelastic governing equations | Forward deformation and heterogeneous-modulus reconstruction; does not validate plasticity or damage |
-| Infer initial velocity or basal friction in a large-deformation flow | [JAX-MPM](/publication/jax-mpm/) | Differentiable particle–grid simulation with particle or region observations | Velocity reconstruction and segmented friction inversion; the friction example specifically uses particle trajectories |
-| Model density-driven CO₂ convection in porous media | [Fourier-feature PINNs](/publication/co2-pinn/) | Coupled flow/transport equations, Fourier features, sequential time training | Homogeneous 2-D tests at Rayleigh numbers 500–2000; accuracy deteriorates in stronger convection |
-| Integrate higher-order meshfree elasticity consistently | [Unified gradient smoothing](/publication/strain-gradient/) | A shared construction of first- and second-order smoothed derivatives | Patch tests and 1-D to 3-D strain-gradient elasticity examples; not a neural solver |
+The Neural-Integrated Meshfree (NIM) method combines the approximation structure of meshfree methods with trainable neural representations. Its NeuroPU approximation couples neural networks with local partition-of-unity basis functions, bringing polynomial reproduction and spatial regularity into the solution representation. We developed both strong-form and local variational formulations and studied their accuracy and convergence for stationary and time-dependent partial differential equations.
 
-The linked publication pages provide abstracts, selected results, methodological scope, and citation information.
+We subsequently extended NIM to finite-strain hyperelasticity. A consistent local variational formulation incorporates nonlinear material behavior, while NeuroPU represents both displacement and spatially varying material properties. This provides a common formulation for forward deformation analysis and the identification of heterogeneous elastic modulus fields from strain observations.
 
-## Neural PDE approximation or differentiable time stepping?
+[NIM (2024)](/publication/nim/) · [Finite-strain hyperelasticity (2025)](/publication/nim-hyperelasticity/) · [Code and tutorials](https://github.com/IntelligentMechanicsLab/NIM-Tutorial)
 
-NIM and JAX-MPM use differentiable computation for different purposes. NIM couples neural networks with a meshfree approximation and constructs physics residuals for training. JAX-MPM differentiates through particle–grid time stepping, allowing a data-misfit objective to update unknown initial conditions or friction parameters. The presence of automatic differentiation does not make their discretizations or inverse problems interchangeable.
+## Differentiable simulation and inverse modeling
 
-For a stationary or finite-strain elasticity problem with strain observations, start with the NIM papers. For a transient particle flow with trajectories or monitoring-region observations, inspect JAX-MPM's observation model and examples. The choice also depends on constitutive assumptions, boundary conditions, available measurements, and compute resources.
+Large-deformation flows involve evolving geometry, contact, and material behavior. JAX-MPM implements the material point method in JAX, combining GPU computation with differentiation through the simulation's time-stepping operations. The framework supports forward simulation of fluid and granular flows and gradient-based estimation of unknown initial conditions and friction parameters.
 
-## What can be run from the public repositories?
+A differentiable observation layer connects simulated states to particle measurements and measurements over fixed spatial regions. Our inverse studies reconstruct initial velocity fields and recover spatially varying basal friction from sparse observations. These developments connect particle-based mechanics with data assimilation and neural representations of unknown fields.
 
-- **[NIM-Tutorial](https://github.com/IntelligentMechanicsLab/NIM-Tutorial)** includes 1-D hyperelasticity notebooks and an advection–diffusion forward example. Check the repository for the currently available examples; it does not package every experiment in the papers.
-- **[JAX-MPM](https://github.com/IntelligentMechanicsLab/JAX-MPM)** includes a dam-break transfer-scheme validation example and a particle-trajectory friction-inversion workflow. Review the example settings and dependencies before running a full simulation.
+[JAX-MPM (2026)](/publication/jax-mpm/) · [Code](https://github.com/IntelligentMechanicsLab/JAX-MPM)
 
+## Physics-informed learning for porous-media flow
 
-## What to check before an inverse simulation
+Density-driven convection governs the mixing of dissolved CO₂ and brine in geological carbon storage. We investigated physics-informed neural networks for the coupled flow and transport equations in a two-dimensional homogeneous porous medium. Fourier-feature embeddings represent spatial variation, and sequential training over time intervals follows the evolution of convective fingers. Comparisons with stabilized finite element solutions examine how the neural approximation captures concentration fields and flow statistics across different convection regimes.
 
-1. **Match observations to the model.** Strains, particle positions, and region-based measurements require different observation operators. A result using one type does not validate all three.
-2. **Match the constitutive assumptions.** The hyperelasticity work concerns elastic finite deformation; do not infer support for history-dependent material identification from that result.
-3. **Separate numerical and inverse error.** A converged forward computation does not establish uniqueness or robustness of recovered parameters. Inspect the paper's sampling and resolution studies.
-4. **Interpret timings with the setup attached.** Hardware, precision, discretization, constitutive models, and implementations affect comparisons. Do not transfer a published speed ratio to a different workload.
+[Density-driven flow and CO₂ sequestration (2023)](/publication/co2-pinn/)
 
-## Papers and citation records
+## Consistent meshfree discretization
 
-{% for paper in site.publications %}{% if paper.detail_page %}
-- [{{ paper.title }}]({{ paper.url | relative_url }}) — {{ paper.authors }}. *{{ paper.journal }}* ({{ paper.publication_year }}). [DOI]({{ paper.paper_url }}) · [BibTeX]({{ paper.bibtex_url | relative_url }})
-{% endif %}{% endfor %}
+My work on meshfree numerical methods also addresses integration consistency for higher-order continuum models. In strain-gradient elasticity, the discretization requires both first- and second-order spatial derivatives. We developed a unified reproducing-kernel gradient-smoothing formulation that derives these derivatives through a shared set of coefficients determined by the integration constraint. The construction supports high-order meshfree approximations, with accuracy and convergence assessed through patch tests and one-, two-, and three-dimensional elasticity problems.
 
-[Publication list](/publications/) · [Machine-readable paper records](/research/papers.json)
+[Gradient smoothing for strain-gradient elasticity (2022)](/publication/strain-gradient/)
+
+[Full publication list](/publications/)
