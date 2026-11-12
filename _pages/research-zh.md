@@ -6,7 +6,7 @@ author_profile: true
 description: "Honghui Du 与合作者的研究导读：根据观测数据和物理模型选择论文、代码与引用入口。"
 ---
 
-这是 Honghui Du与合作者研究工作的中文导读，由作者维护。用于帮助读者根据研究问题找到论文和已有代码，不是独立的方法排名。[English guide](/research/)
+我们的研究围绕计算力学中的数值方法展开，重点包括神经无网格近似、可微仿真与反问题。以下按研究问题介绍相关方法、论文及公开代码。[English guide](/research/)
 
 ## 从你的问题出发
 
@@ -29,8 +29,8 @@ NIM 将神经网络和无网格近似结合，通过物理残差训练求解。J
 - [NIM-Tutorial](https://github.com/IntelligentMechanicsLab/NIM-Tutorial)：现有一维超弹性 notebook 和对流–扩散正问题示例。
 - [JAX-MPM](https://github.com/IntelligentMechanicsLab/JAX-MPM)：现有溃坝传递格式验证和摩擦反演流程。
 
-仓库提供部分示例，不代表所有论文实验均已打包。具体参数以论文和对应代码为准。本导读没有新增算例，也没有声称新增性能验证。
+公开仓库包含论文中的部分算例，具体模型、参数与运行方法见对应代码说明。
 
-每篇独立页面都提供英文正式标题、作者、期刊信息、DOI 和 BibTeX。引用时使用正式出版信息；预印本链接作为可读版本入口。CO₂ 工作的详细内容依据 corrected proof 核对，其他四篇依据发表版 PDF 核对。
+各论文页面提供摘要、主要结果、方法适用范围与引用信息，并附正式出版链接及可用的预印本。
 
 [全部论文](/publications/) · [机器可读论文记录](/research/papers.json)

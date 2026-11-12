@@ -6,7 +6,7 @@ author_profile: true
 description: "Choose a starting point for neural meshfree PDE solvers, finite-strain material identification, differentiable MPM, and porous-media PINNs. Research by Honghui Du and collaborators."
 ---
 
-This guide connects research tasks to papers and available code by **Honghui Du and collaborators**. It is an author-maintained guide to this research portfolio, rather than an independent ranking of numerical methods. [中文导读](/zh/research/)
+Our research develops numerical methods for computational mechanics, with a focus on neural meshfree approximation, differentiable simulation, and inverse modeling. The sections below connect these methods to their applications, publications, and available code. [中文导读](/zh/research/)
 
 ## Which method fits the problem?
 
@@ -18,7 +18,7 @@ This guide connects research tasks to papers and available code by **Honghui Du 
 | Model density-driven CO₂ convection in porous media | [Fourier-feature PINNs](/publication/co2-pinn/) | Coupled flow/transport equations, Fourier features, sequential time training | Homogeneous 2-D tests at Rayleigh numbers 500–2000; accuracy deteriorates in stronger convection |
 | Integrate higher-order meshfree elasticity consistently | [Unified gradient smoothing](/publication/strain-gradient/) | A shared construction of first- and second-order smoothed derivatives | Patch tests and 1-D to 3-D strain-gradient elasticity examples; not a neural solver |
 
-The linked paper pages provide the formal DOI, abstract, result figures, limitations, and BibTeX. The CO₂ page's detailed evidence was checked against the corrected proof; the other four were checked against published PDFs.
+The linked publication pages provide abstracts, selected results, methodological scope, and citation information.
 
 ## Neural PDE approximation or differentiable time stepping?
 
@@ -31,7 +31,6 @@ For a stationary or finite-strain elasticity problem with strain observations, s
 - **[NIM-Tutorial](https://github.com/IntelligentMechanicsLab/NIM-Tutorial)** includes 1-D hyperelasticity notebooks and an advection–diffusion forward example. Check the repository for the currently available examples; it does not package every experiment in the papers.
 - **[JAX-MPM](https://github.com/IntelligentMechanicsLab/JAX-MPM)** includes a dam-break transfer-scheme validation example and a particle-trajectory friction-inversion workflow. Review the example settings and dependencies before running a full simulation.
 
-These links point to existing implementations. No additional benchmark results or runtime claims are implied by this guide.
 
 ## What to check before an inverse simulation
 
