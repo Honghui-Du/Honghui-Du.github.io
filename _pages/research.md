@@ -6,7 +6,7 @@ author_profile: true
 description: "Choose a starting point for neural meshfree PDE solvers, finite-strain material identification, differentiable MPM, and porous-media PINNs. Research by Honghui Du and collaborators."
 ---
 
-Our research develops numerical methods for computational mechanics, with a focus on neural meshfree approximation, differentiable simulation, and inverse modeling. The sections below connect these methods to their applications, publications, and available code. [中文导读](/zh/research/)
+Our research develops numerical methods for computational mechanics, with a focus on neural meshfree approximation, differentiable simulation, and inverse modeling. The sections below connect these methods to their applications, publications, and available code.
 
 ## Which method fits the problem?
 

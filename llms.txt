@@ -9,7 +9,6 @@ sitemap: false
 ## Research guides
 
 - [Methods, papers, and code](https://honghui-du.github.io/research/): Task-based guide, scope distinctions, and existing implementations.
-- [中文研究导读](https://honghui-du.github.io/zh/research/): Chinese-language guide to the same research.
 - [Publication list](https://honghui-du.github.io/publications/): Bibliographic overview.
 - [Paper records](https://honghui-du.github.io/research/papers.json): Structured metadata generated from the publication pages.
 

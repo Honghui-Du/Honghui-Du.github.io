@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 
-Explore the [research guide](/research/) to find papers and existing code by task: neural PDE solving, material identification, differentiable particle simulation, and porous-media modeling. [中文导读](/zh/research/)
+Explore the [research guide](/research/) to find papers and existing code by task: neural PDE solving, material identification, differentiable particle simulation, and porous-media modeling.
 
 ## Biography
 ------
